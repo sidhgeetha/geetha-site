@@ -8,7 +8,7 @@
 4. Work experience
 5. Footer
 
-## 🚀 Vercel [: https://mp3-downloader-tamilsongs.netlify.app/](https://geetha-site.vercel.app/)
+## 🚀 Vercel : https://geetha-site.vercel.app/
 
 
 
