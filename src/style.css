@@ -1,10 +1,11 @@
 @import "tailwindcss";
 @import "@fontsource/montserrat";
-/* @layer utilities {
+
+@layer utilities {
   .pointer {
     @apply cursor-pointer;
   }
-} */
+}
 
 
 /* :root {

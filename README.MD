@@ -31,6 +31,7 @@
  reference :https://sidhgeetha.framer.website/
 
  ![alt text](image.png)
+ ![alt text](assets/images/Sketch.jpeg)
 
 - Wireframe: Elements 
   Had an Idea to have  header, main-hero section, projects section, work experiecen and footer section.
