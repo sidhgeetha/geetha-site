@@ -12,118 +12,698 @@
     <link href="/src/style.css" rel="stylesheet">
 
   </head>
-  <body class="m-0 p-0">
+  <body class="m-0 p-0 font-">
     <!-- Header section -->
     <header
-      class="px-10 py-8 flex justify-between w-full max-w-7xl mx-auto flex justify-between items-center px-6 lg:px-8">
-      <!-- logo -->
+      class="px-10 py-6 flex justify-between w-full mx-auto items-center lg:px-12 fixed top-0 left-0 z-50 bg-[#05070d]/5 backdrop-blur-md border-b border-white/20">
 
-      <!-- <div class=""> -->
-
+      <!-- Logo -->
       <div
-        class="w-full   px-6 lg:px-0  flex justify-center lg:justify-start ">
+        class="w-full max-w-7xl px-10 lg:px-6 sm:px-6 flex lg:justify-start sm:justify-start">
         <img src="/assets/images/Asset 1.png"
-          class=" sm:w-20 sm:h-20 md:w-20 md:h-16 lg:w-20 lg:h-16" />
+          class="w-12 h-8 sm:w-20 sm:h-14 md:w-20 md:h-16 lg:w-20 lg:h-16" />
       </div>
 
-      <div class="nav-links flex items-center justify-between space-x-10 ">
-        <ul
-          class="list-none flex flex-row space-x-10 font-thin font-montserrat text-3xl md:text-4xl lg:text-2xl  ">
-          <li> <a href="#home"
-              class="hover:underline hover:decoration-teal-400 decoration-slate-600 underline-offset-4">Home</a></li>
-          <li> <a href="#projects"
-              class="hover:underline hover:decoration-teal-400 decoration-slate-600">Projects</a></li>
+      <!-- Mobile Toggle Checkbox -->
+       
+      <input type="checkbox" id="menuToggle" class="peer hidden" />
 
-          <li> <a href="#experience"
-              class="hover:underline hover:decoration-teal-400 decoration-slate-600">About</a></li>
+      <!-- Hamburger / Close Button -->
+      <label for="menuToggle"
+        class=" sm:hidden cursor-pointer w-10 h-10 flex items-center justify-center group ">
+
+        <!-- Hamburger Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+          class=" block peer-checked:hidden text-white"
+          width="60" height="60" viewBox="0 0 24 24">
+          <path fill="currentColor" fill-rule="evenodd"
+            d="M20.75 7a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75"
+            clip-rule="evenodd" />
+        </svg>
+
+        <!-- Close Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden peer-checked:block text-white" width="32" height="32"
+          viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path
+            fill="currentColor"
+            d="m12 13.4l-2.917 2.925q-.277.275-.704.275t-.704-.275q-.275-.275-.275-.7t.275-.7L10.6 12L7.675 9.108Q7.4 8.831 7.4 8.404t.275-.704q.275-.275.7-.275t.7.275L12 10.625L14.892 7.7q.277-.275.704-.275t.704.275q.3.3.3.713t-.3.687L13.375 12l2.925 2.917q.275.277.275.704t-.275.704q-.3.3-.712.3t-.688-.3z" /></svg>
+      </label>
+     
+
+      <!-- Navigation & Social Links -->
+      <div
+        class="hidden peer-checked:flex sm:flex flex-col sm:flex-row items-center justify-between space-y-6 sm:space-y-0 sm:space-x-10 absolute sm:static top-20 left-0 w-full sm:w-auto bg-[#05070d]/90 sm:bg-transparent py-6 sm:py-0 text-white">
+
+        <!-- Nav Links -->
+        <ul
+          class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-10 font-thin font-montserrat text-3xl md:text-2xl lg:text-xl px-10">
+          <li><a href="#home"
+              class="hover:underline hover:decoration-teal-400">Home</a></li>
+          <li><a href="#projects"
+              class="hover:underline hover:decoration-teal-400">Projects</a></li>
+          <li><a href="#experience"
+              class="hover:underline hover:decoration-teal-400">Resume</a></li>
         </ul>
 
+        <!-- Social Icons -->
+        <div class="flex gap-4 mt-4 sm:mt-0">
+          <a href="https://github.com/sidhgeetha" target="_blank"
+            class="flex items-center justify-center border border-slate-200/20 w-14 h-14 rounded-full hover:border-teal-400/50 hover:scale-105">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24"
+              fill="white">
+              <path
+                d="M11.996 1.284a10.986 10.986 0 0 0-3.472 21.412c.548.095.722-.227.722-.517c0-.263.006-.991 0-1.91c-3.057.662-3.688-1.448-3.688-1.448a2.9 2.9 0 0 0-1.22-1.607c-.997-.682.075-.669.075-.669a2.3 2.3 0 0 1 1.683 1.131a2.34 2.34 0 0 0 3.197.914a2.34 2.34 0 0 1 .697-1.464c-2.439-.279-5.004-1.22-5.004-5.432a4.25 4.25 0 0 1 1.132-2.948a3.94 3.94 0 0 1 .107-2.907s.924-.295 3.02 1.128a10.4 10.4 0 0 1 5.503 0c2.102-1.422 3.018-1.128 3.018-1.128c.405.92.444 1.96.109 2.907a4.24 4.24 0 0 1 1.13 2.95c0 4.223-2.569 5.15-5.016 5.42a2.6 2.6 0 0 1 .752 2.026v3.041c0 .294.177.619.735.512a10.986 10.986 0 0 0-3.48-21.411" />
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sidhgeetha/" target="_blank"
+            class="flex items-center justify-center border border-slate-200/20 w-14 h-14 rounded-full hover:border-teal-400/50 hover:scale-105">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="white" viewBox="0 0 20 20">
+              <path
+                d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.65 13.979H5.706V7.723H7.65zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973m8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699z" />
+            </svg>
+          </a>
+        </div>
+
       </div>
-      <!-- </div> -->
 
     </header>
-    <!-- <img src="/assets/images/geetha.png"> -->
 
     <!-- Hero section -->
 
     <main>
       <section
-        class="pt-10 pl-12 pr-12  md:pt-20 md:pl-24  lg:pt-8 ">
-        <div class="max-w-7xl mx-auto px-6 lg:px-0">
-          <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
+  id="home"
+  class="bg-slate-950 pt-28 px-6 sm:pt-32 sm:px-8 md:pt-36 md:px-12 lg:pt-40 lg:px-24"
+>
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-8 lg:gap-20">
 
-            <div class="w-full max-w-md lg:w-420px flex-shrink-0">
-              <img src="/assets/images/geetha.png" alt="Profile"
-                class="w-full object-cover" />
+    <!-- Profile Image -->
+    <div class="w-full max-w-md lg:w-[420px] flex-shrink-0">
+      <img src="/assets/images/geetha.png" alt="Profile" class="w-full object-cover" />
+    </div>
+
+    <!-- Text Content -->
+    <div class="flex-1 mt-6 lg:mt-16">
+      <p class="text-teal-300 font-medium mb-4 text-2xl sm:text-3xl md:text-3xl lg:text-5xl font-montserrat">
+        I'm Geetha Sidhambaram
+      </p>
+      <p class="text-slate-300  mb-4 text-xl sm:text-3xl md:text-3xl lg:text-4xl font-montserrat">
+        UXUI Designer
+      </p>
+      <h1 class="text-slate-300 font-thin font-montserrat text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug mb-8">
+        Passionate about turning ideas into user-centered applications
+        that enhance user experience and exploring more about UI development.
+      </h1>
+
+
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+      <!-- skill section -->
+      <section id="skills" class="py-20  bg-slate-900 ">
+
+        <div class="max-w-7xl mx-auto mt-4 px-6 ">
+          <h2
+            class="text-4xl md:text-4xl font-bold text-white mb-12 font-montserrat text-center">
+            Skills & Expertise
+          </h2>
+          <div
+            class="flex flex-col md:flex-row lg:flex-row md:justify-between gap-10 ">
+
+            <!-- Left Card -->
+            <div class="flex-1 ">
+
+              <div
+                class=" shadow-md border hover:shadow-md hover:shadow-slate-800 
+            bg-slate-700/40 backdrop-blur-lg rounded-2xl border-slate-300/15 
+            transition-transform duration-300 hover:scale-105 pb-12
+            min-h-[300px]">
+                <div
+                  class=" backdrop-blur-lg h-16 w-25 ml-8 mt-8 rounded-2xl bg-teal-400 text-slate-600 flex justify-center items-center text-center hover:-translate-x-6 hover:-translate-y-6  transition-all duration-800 ease-out ">UX/UI</div>
+
+                <!-- pills -->
+                <div class="flex flex-wrap gap-3 mt-6 ml-4">
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Figma</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Invision</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Miro</span>
+
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Draw.io</span>
+
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Notion</span>
+
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Framer</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Balsamiq</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Adobe
+                    XD</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Wireframe</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Mockup</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Prototype</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Typography</span>
+
+                </div>
+              </div>
             </div>
+
+            <!-- Right Card -->
             <div
-              class="flex-1 pt-0 lg:pt-12">
-              <p
-                class="text-teal-600 font-medium mb-4 text-3xl font-montserrat">
-                I'm Geetha Sidhambaram
+              class="flex-1  ">
 
-              </p>
-              <h1
-                class="text-3xl md:text-4xl lg:text-4xl  leading-snug mb-8 text-slate-600 font-thin font-montserrat">
-                Passionate about turning ideas into user centered applications
-                that enhance user experience and exploring more about UI
-                developement.
-              </h1>
+              <div
+                class=" shadow-md border hover:shadow-md hover:shadow-slate-800 
+            bg-slate-700/40 backdrop-blur-lg rounded-2xl border-slate-300/15 
+            transition-transform duration-300 hover:scale-105 pb-12
+            min-h-[300px]">
 
-              <div class="flex gap-6 ">
+                <div
+                  class=" backdrop-blur-lg h-16 w-25 ml-8 mt-8  rounded-2xl bg-teal-400 text-slate-600 flex justify-center items-center text-center hover:-translate-x-6 hover:-translate-y-6  transition-all duration-800 ease-out ">Front-end</div>
 
-                <div class="cursor-pointer">
-                  <a href="https://github.com/sidhgeetha"
+                <div class="flex flex-wrap gap-3 mt-6 ml-4">
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">HTML</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">CSS</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Bootstrap</span>
+
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Tailwindcss</span>
+
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">ReactJS</span>
+
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Javascript</span>
+                  <span
+                    class="py-2 px-3 rounded-4xl font-medium border border-slate-300/20 bg-slate-700/50 text-xs text-slate-300">Javascript</span>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- my projects -->
+
+      <section id="projects" class="py-20  bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 ">
+          <h2
+            class="text-4xl md:text-4xl font-bold text-white mb-12 font-montserrat text-center">
+            My Projects
+          </h2>
+
+          <div class="space-y-16">
+            <!-- Project 1 -->
+
+            <div
+              class="flex flex-col lg:flex-row gap-8 w-full  p-12 lg:gap-12 
+               border border-slate-300/15 hover:shadow-md hover:shadow-slate-800 bg-slate-700/40 backdrop-blur-lg rounded-2xl">
+              <div class="lg:w-1/2">
+                <div class="overflow-hidden">
+                  <img
+                    src="/assets/images/mp3page.png"
+                    alt="E-Commerce Platform"
+                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+              </div>
+              <div class="lg:w-1/2 flex flex-col justify-center">
+                <h3
+                  class="text-xl md:text-2xl font-medium text-teal-200 mb-4 font-montserrat">
+                  Tamil MP3 Downloader - Landing page
+                </h3>
+                <p class="text-gray-300 leading-relaxed mb-6 font-montserrat">
+                  Built a responsive landing page for an MP3 Downloader app
+                  using HTML, CSS, and Bootstrap.
+                  Focused on responsiveness with mobile, tablet, and desktop
+                  layouts, clean navigation, readable fonts, and
+                  visually appealing color schemes.
+                </p>
+
+                <div class="flex gap-6 ">
+
+                  <div class="cursor-pointer">
+                    <a
+                      href="https://github.com/sidhgeetha/tamil-mp3-downloader.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center justify-center gap-2 text-slate-200  flex-row  py-1  text-center rounded pointer">
+                      <!-- GitHub SVG Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24"
+                        viewBox="0 0 24 24"><!-- Icon from Logos free icons by Streamline - https://creativecommons.org/licenses/by/4.0/ --><path
+                          fill="white"
+                          d="M11.996 1.284a10.986 10.986 0 0 0-3.472 21.412c.548.095.722-.227.722-.517c0-.263.006-.991 0-1.91c-3.057.662-3.688-1.448-3.688-1.448a2.9 2.9 0 0 0-1.22-1.607c-.997-.682.075-.669.075-.669a2.3 2.3 0 0 1 1.683 1.131a2.34 2.34 0 0 0 3.197.914a2.34 2.34 0 0 1 .697-1.464c-2.439-.279-5.004-1.22-5.004-5.432a4.25 4.25 0 0 1 1.132-2.948a3.94 3.94 0 0 1 .107-2.907s.924-.295 3.02 1.128a10.4 10.4 0 0 1 5.503 0c2.102-1.422 3.018-1.128 3.018-1.128c.405.92.444 1.96.109 2.907a4.24 4.24 0 0 1 1.13 2.95c0 4.223-2.569 5.15-5.016 5.42a2.6 2.6 0 0 1 .752 2.026v3.041c0 .294.177.619.735.512a10.986 10.986 0 0 0-3.48-21.411" /></svg>
+                      <span class="hover:text-teal-400">Code</span>
+                    </a>
+                  </div>
+
+                  <a href="https://thamilmp3songs-downloader.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="flex items-center justify-center gap-2 text-slate-800 flex-row bg-teal-400 py-1 px-4 text-center rounded pointer">
+                    class="flex items-center justify-center gap-2 text-slate-200  flex-row  py-1 text-center rounded cursor-pointer">
                     <!-- GitHub SVG Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                      height="32"
-                      viewBox="0 0 24 24"><!-- Icon from Logos free icons by Streamline - https://creativecommons.org/licenses/by/4.0/ --><path
-                        fill="#1e293b"
-                        d="M11.996 1.284a10.986 10.986 0 0 0-3.472 21.412c.548.095.722-.227.722-.517c0-.263.006-.991 0-1.91c-3.057.662-3.688-1.448-3.688-1.448a2.9 2.9 0 0 0-1.22-1.607c-.997-.682.075-.669.075-.669a2.3 2.3 0 0 1 1.683 1.131a2.34 2.34 0 0 0 3.197.914a2.34 2.34 0 0 1 .697-1.464c-2.439-.279-5.004-1.22-5.004-5.432a4.25 4.25 0 0 1 1.132-2.948a3.94 3.94 0 0 1 .107-2.907s.924-.295 3.02 1.128a10.4 10.4 0 0 1 5.503 0c2.102-1.422 3.018-1.128 3.018-1.128c.405.92.444 1.96.109 2.907a4.24 4.24 0 0 1 1.13 2.95c0 4.223-2.569 5.15-5.016 5.42a2.6 2.6 0 0 1 .752 2.026v3.041c0 .294.177.619.735.512a10.986 10.986 0 0 0-3.48-21.411" /></svg>
-                    <span>GitHub</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24"
+                      viewBox="0 0 32 32"><!-- Icon from VSCode Icons by Roberto Huertas - https://github.com/vscode-icons/vscode-icons/blob/master/LICENSE --><path
+                        fill="#fff"
+                        d="M29.39 13.98L18.02 2.61l-.42-.42l-.47-.19h-2.26l-.47.2l-.42.41L2.61 13.98l-.42.42l-.19.47v2.26l.2.47l.41.42l11.37 11.37l.42.42l.47.19h2.26l.47-.2l.42-.41l11.37-11.37l.42-.42l.19-.47v-2.26l-.2-.47z" /><path
+                        fill="#05bdba"
+                        d="M14.99 27.38v-5.46l.14-.15h1.74l.14.15v5.46l-.14.14h-1.74zm0-17.3V4.62l.14-.14h1.74l.14.14v5.46l-.14.15h-1.74zM10.4 23.33h-.24l-1.2-1.2v-.23l1.6-1.6h1.26l.17.18v1.26l-1.6 1.6ZM8.96 10.16v-.24l1.2-1.2h.24l1.59 1.6v1.26l-.17.17h-1.26zm-4.8 4.82h6.14l.14.15v1.74l-.14.14H4.16L4 16.87v-1.74l.15-.15Z" /><path
+                        fill="#014847"
+                        d="M19.26 19.62h-1.74l-.15-.15v-4.06c0-.73-.28-1.29-1.15-1.3c-.45-.02-.97 0-1.51.02l-.09.08v5.26l-.14.15h-1.74l-.14-.15v-6.94l.14-.15h3.9a2.75 2.75 0 0 1 2.76 2.75v4.34l-.15.15Z" /><path
+                        fill="#05bdba"
+                        d="M27.84 17.02H21.7l-.14-.15v-1.74l.14-.14h6.14l.15.14v1.74z" /></svg>
+                    <span class="hover:text-teal-400">Demo link</span>
                   </a>
+
                 </div>
 
-                <a href="https://www.linkedin.com/in/sidhgeetha/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex items-center justify-center gap-2 text-slate-800 flex-row  bg-teal-400 py-1 px-4 text-center rounded cursor-pointer">
-                  <!-- GitHub SVG Icon -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                    viewBox="0 0 20 20"><!-- Icon from Entypo+ Social by Daniel Bruce - https://creativecommons.org/licenses/by-sa/4.0/ --><path
-                      fill="1e293b"
-                      d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.65 13.979H5.706V7.723H7.65zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973m8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699z" /></svg>
-                  <span>LinkedIn</span>
-                </a>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+
+            <div
+              class="flex flex-col lg:flex-row gap-8 w-full  p-12 lg:gap-12 
+               border border-slate-300/15 hover:shadow-md hover:shadow-slate-800 bg-slate-700/40 backdrop-blur-lg rounded-2xl">
+              <div class="lg:w-1/2">
+                <div class="overflow-hidden">
+                  <img
+                    src="/assets/images/courselanding.png"
+                    alt="E-Commerce Platform"
+                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+              </div>
+              <div class="lg:w-1/2 flex flex-col justify-center">
+                <h3
+                  class="text-xl md:text-2xl font-medium  text-teal-200 mb-4 font-montserrat">
+                  HMTL CSS learning course
+                </h3>
+                <p class="text-gray-300 leading-relaxed mb-6 font-montserrat">
+                  A responsive, visually appealing landing page for Cyberdude
+                  Networks, built using just HTML and CSS.
+                </p>
+
+                <div class="flex gap-6 ">
+
+                  <div class="cursor-pointer">
+                    <a
+                      href="https://github.com/sidhgeetha/cyberdude-networks-landingpage"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center justify-center gap-2 text-slate-200  flex-row  py-1 text-center rounded pointer">
+                      <!-- GitHub SVG Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24"
+                        viewBox="0 0 24 24"><!-- Icon from Logos free icons by Streamline - https://creativecommons.org/licenses/by/4.0/ --><path
+                          fill="white"
+                          d="M11.996 1.284a10.986 10.986 0 0 0-3.472 21.412c.548.095.722-.227.722-.517c0-.263.006-.991 0-1.91c-3.057.662-3.688-1.448-3.688-1.448a2.9 2.9 0 0 0-1.22-1.607c-.997-.682.075-.669.075-.669a2.3 2.3 0 0 1 1.683 1.131a2.34 2.34 0 0 0 3.197.914a2.34 2.34 0 0 1 .697-1.464c-2.439-.279-5.004-1.22-5.004-5.432a4.25 4.25 0 0 1 1.132-2.948a3.94 3.94 0 0 1 .107-2.907s.924-.295 3.02 1.128a10.4 10.4 0 0 1 5.503 0c2.102-1.422 3.018-1.128 3.018-1.128c.405.92.444 1.96.109 2.907a4.24 4.24 0 0 1 1.13 2.95c0 4.223-2.569 5.15-5.016 5.42a2.6 2.6 0 0 1 .752 2.026v3.041c0 .294.177.619.735.512a10.986 10.986 0 0 0-3.48-21.411" /></svg>
+                      <span class="hover:text-teal-400">Code</span>
+                    </a>
+                  </div>
+
+                  <a href="https://cyberdude-networks-landingpage.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center gap-2 text-slate-200  flex-row  py-1  text-center rounded cursor-pointer">
+                    <!-- GitHub SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24"
+                      viewBox="0 0 32 32"><!-- Icon from VSCode Icons by Roberto Huertas - https://github.com/vscode-icons/vscode-icons/blob/master/LICENSE --><path
+                        fill="#fff"
+                        d="M29.39 13.98L18.02 2.61l-.42-.42l-.47-.19h-2.26l-.47.2l-.42.41L2.61 13.98l-.42.42l-.19.47v2.26l.2.47l.41.42l11.37 11.37l.42.42l.47.19h2.26l.47-.2l.42-.41l11.37-11.37l.42-.42l.19-.47v-2.26l-.2-.47z" /><path
+                        fill="#05bdba"
+                        d="M14.99 27.38v-5.46l.14-.15h1.74l.14.15v5.46l-.14.14h-1.74zm0-17.3V4.62l.14-.14h1.74l.14.14v5.46l-.14.15h-1.74zM10.4 23.33h-.24l-1.2-1.2v-.23l1.6-1.6h1.26l.17.18v1.26l-1.6 1.6ZM8.96 10.16v-.24l1.2-1.2h.24l1.59 1.6v1.26l-.17.17h-1.26zm-4.8 4.82h6.14l.14.15v1.74l-.14.14H4.16L4 16.87v-1.74l.15-.15Z" /><path
+                        fill="#014847"
+                        d="M19.26 19.62h-1.74l-.15-.15v-4.06c0-.73-.28-1.29-1.15-1.3c-.45-.02-.97 0-1.51.02l-.09.08v5.26l-.14.15h-1.74l-.14-.15v-6.94l.14-.15h3.9a2.75 2.75 0 0 1 2.76 2.75v4.34l-.15.15Z" /><path
+                        fill="#05bdba"
+                        d="M27.84 17.02H21.7l-.14-.15v-1.74l.14-.14h6.14l.15.14v1.74z" /></svg>
+
+                    <span class="hover:text-teal-400">Demo link</span>
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+
+            <div
+              class="flex flex-col lg:flex-row gap-8 w-full  p-12 lg:gap-12 
+               border border-slate-300/15 hover:shadow-md hover:shadow-slate-800 bg-slate-700/40 backdrop-blur-lg rounded-2xl">
+              <div class="lg:w-1/2">
+                <div class="overflow-hidden">
+                  <img
+                    src="/assets/images/imdb.png"
+                    alt="E-Commerce Platform"
+                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+              </div>
+              <div class="lg:w-1/2 flex flex-col justify-center">
+                <h3
+                  class="text-xl md:text-2xl font-medium  text-teal-200 mb-4 font-montserrat">
+                  imdb-clone
+                </h3>
+                <p class="text-gray-300 leading-relaxed mb-6 font-montserrat">
+                  Imdb page clone Front-end React.js single-page application
+                  built with Create React App, focused on JavaScript, CSS, and
+                  HTML.
+                </p>
+
+                <div class="flex gap-6 ">
+
+                  <div class="cursor-pointer">
+                    <a href="https://github.com/sidhgeetha/imdbproject.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center justify-center gap-2 text-slate-200  flex-row  py-1  text-center rounded pointer">
+                      <!-- GitHub SVG Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24"
+                        viewBox="0 0 24 24"><!-- Icon from Logos free icons by Streamline - https://creativecommons.org/licenses/by/4.0/ --><path
+                          fill="white"
+                          d="M11.996 1.284a10.986 10.986 0 0 0-3.472 21.412c.548.095.722-.227.722-.517c0-.263.006-.991 0-1.91c-3.057.662-3.688-1.448-3.688-1.448a2.9 2.9 0 0 0-1.22-1.607c-.997-.682.075-.669.075-.669a2.3 2.3 0 0 1 1.683 1.131a2.34 2.34 0 0 0 3.197.914a2.34 2.34 0 0 1 .697-1.464c-2.439-.279-5.004-1.22-5.004-5.432a4.25 4.25 0 0 1 1.132-2.948a3.94 3.94 0 0 1 .107-2.907s.924-.295 3.02 1.128a10.4 10.4 0 0 1 5.503 0c2.102-1.422 3.018-1.128 3.018-1.128c.405.92.444 1.96.109 2.907a4.24 4.24 0 0 1 1.13 2.95c0 4.223-2.569 5.15-5.016 5.42a2.6 2.6 0 0 1 .752 2.026v3.041c0 .294.177.619.735.512a10.986 10.986 0 0 0-3.48-21.411" /></svg>
+                      <span class="hover:text-teal-400">Code</span>
+                    </a>
+                  </div>
+
+                  <a href="https://imdb-clonepage.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center gap-2 text-slate-200  flex-row  py-1  text-center rounded cursor-pointer">
+                    <!-- GitHub SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24"
+                      viewBox="0 0 32 32"><!-- Icon from VSCode Icons by Roberto Huertas - https://github.com/vscode-icons/vscode-icons/blob/master/LICENSE --><path
+                        fill="#fff"
+                        d="M29.39 13.98L18.02 2.61l-.42-.42l-.47-.19h-2.26l-.47.2l-.42.41L2.61 13.98l-.42.42l-.19.47v2.26l.2.47l.41.42l11.37 11.37l.42.42l.47.19h2.26l.47-.2l.42-.41l11.37-11.37l.42-.42l.19-.47v-2.26l-.2-.47z" /><path
+                        fill="#05bdba"
+                        d="M14.99 27.38v-5.46l.14-.15h1.74l.14.15v5.46l-.14.14h-1.74zm0-17.3V4.62l.14-.14h1.74l.14.14v5.46l-.14.15h-1.74zM10.4 23.33h-.24l-1.2-1.2v-.23l1.6-1.6h1.26l.17.18v1.26l-1.6 1.6ZM8.96 10.16v-.24l1.2-1.2h.24l1.59 1.6v1.26l-.17.17h-1.26zm-4.8 4.82h6.14l.14.15v1.74l-.14.14H4.16L4 16.87v-1.74l.15-.15Z" /><path
+                        fill="#014847"
+                        d="M19.26 19.62h-1.74l-.15-.15v-4.06c0-.73-.28-1.29-1.15-1.3c-.45-.02-.97 0-1.51.02l-.09.08v5.26l-.14.15h-1.74l-.14-.15v-6.94l.14-.15h3.9a2.75 2.75 0 0 1 2.76 2.75v4.34l-.15.15Z" /><path
+                        fill="#05bdba"
+                        d="M27.84 17.02H21.7l-.14-.15v-1.74l.14-.14h6.14l.15.14v1.74z" /></svg>
+
+                    <span class="hover:text-teal-400">Demo link</span>
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- project4 -->
+
+            <div
+              class="flex flex-col lg:flex-row gap-8 w-full  p-12 lg:gap-12 
+               border border-slate-300/15 hover:shadow-md hover:shadow-slate-800 bg-slate-700/40 backdrop-blur-lg rounded-2xl">
+              <div class="lg:w-1/2">
+                <div class="overflow-hidden">
+                  <img
+                    src="/assets/images/storybox.png"
+                    alt="E-Commerce Platform"
+                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+              </div>
+              <div class="lg:w-1/2 flex flex-col justify-center">
+                <h3
+                  class="text-xl md:text-2xl font-medium  text-teal-200 mb-4 font-montserrat">
+                  StoryBox
+                </h3>
+                <p class="text-gray-300 leading-relaxed mb-6 font-montserrat">
+                  Front-end React.js single-page application (SPA) built with
+                  Create React App, focused on JavaScript, CSS, and HTML.
+                  A web platform for kids to create, illustrate, and publish
+                  their own stories. Users can add AI-assisted illustrations,
+                  share their stories,
+                  and even print or sell them online.
+                </p>
+                <div class="flex gap-6 ">
+
+                  <div class="cursor-pointer">
+                    <a href="https://github.com/sidhgeetha/storybox-page.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center justify-center gap-2 text-slate-200  flex-row  py-1  text-center rounded pointer">
+                      <!-- GitHub SVG Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24"
+                        viewBox="0 0 24 24"><!-- Icon from Logos free icons by Streamline - https://creativecommons.org/licenses/by/4.0/ --><path
+                          fill="white"
+                          d="M11.996 1.284a10.986 10.986 0 0 0-3.472 21.412c.548.095.722-.227.722-.517c0-.263.006-.991 0-1.91c-3.057.662-3.688-1.448-3.688-1.448a2.9 2.9 0 0 0-1.22-1.607c-.997-.682.075-.669.075-.669a2.3 2.3 0 0 1 1.683 1.131a2.34 2.34 0 0 0 3.197.914a2.34 2.34 0 0 1 .697-1.464c-2.439-.279-5.004-1.22-5.004-5.432a4.25 4.25 0 0 1 1.132-2.948a3.94 3.94 0 0 1 .107-2.907s.924-.295 3.02 1.128a10.4 10.4 0 0 1 5.503 0c2.102-1.422 3.018-1.128 3.018-1.128c.405.92.444 1.96.109 2.907a4.24 4.24 0 0 1 1.13 2.95c0 4.223-2.569 5.15-5.016 5.42a2.6 2.6 0 0 1 .752 2.026v3.041c0 .294.177.619.735.512a10.986 10.986 0 0 0-3.48-21.411" /></svg>
+                      <span class="hover:text-teal-400">Code</span>
+                    </a>
+                  </div>
+
+                  <a href="https://storybox-page.vercel.app//"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center gap-2 text-slate-200  flex-row  py-1 text-center rounded cursor-pointer">
+                    <!-- GitHub SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24"
+                      viewBox="0 0 32 32"><!-- Icon from VSCode Icons by Roberto Huertas - https://github.com/vscode-icons/vscode-icons/blob/master/LICENSE --><path
+                        fill="#fff"
+                        d="M29.39 13.98L18.02 2.61l-.42-.42l-.47-.19h-2.26l-.47.2l-.42.41L2.61 13.98l-.42.42l-.19.47v2.26l.2.47l.41.42l11.37 11.37l.42.42l.47.19h2.26l.47-.2l.42-.41l11.37-11.37l.42-.42l.19-.47v-2.26l-.2-.47z" /><path
+                        fill="#05bdba"
+                        d="M14.99 27.38v-5.46l.14-.15h1.74l.14.15v5.46l-.14.14h-1.74zm0-17.3V4.62l.14-.14h1.74l.14.14v5.46l-.14.15h-1.74zM10.4 23.33h-.24l-1.2-1.2v-.23l1.6-1.6h1.26l.17.18v1.26l-1.6 1.6ZM8.96 10.16v-.24l1.2-1.2h.24l1.59 1.6v1.26l-.17.17h-1.26zm-4.8 4.82h6.14l.14.15v1.74l-.14.14H4.16L4 16.87v-1.74l.15-.15Z" /><path
+                        fill="#014847"
+                        d="M19.26 19.62h-1.74l-.15-.15v-4.06c0-.73-.28-1.29-1.15-1.3c-.45-.02-.97 0-1.51.02l-.09.08v5.26l-.14.15h-1.74l-.14-.15v-6.94l.14-.15h3.9a2.75 2.75 0 0 1 2.76 2.75v4.34l-.15.15Z" /><path
+                        fill="#05bdba"
+                        d="M27.84 17.02H21.7l-.14-.15v-1.74l.14-.14h6.14l.15.14v1.74z" /></svg>
+
+                    <span class="hover:text-teal-400">Demo link</span>
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- project 5 -->
+            <div
+              class="flex flex-col lg:flex-row gap-8 w-full  p-12 lg:gap-12 
+               border border-slate-300/15 hover:shadow-md hover:shadow-slate-800 bg-slate-700/40 backdrop-blur-lg rounded-2xl">
+              <div class="lg:w-1/2">
+                <div class="overflow-hidden">
+                  <img
+                    src="/assets/images/redesign-vilfresh.png"
+                    alt="E-Commerce Platform"
+                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+              </div>
+              <div class="lg:w-1/2 flex flex-col justify-center">
+                <h3
+                  class="text-xl md:text-2xl font-medium  text-teal-200 mb-4 font-montserrat">
+                  E-Commerce Platform - Vilfresh
+                </h3>
+                <p class="text-gray-300 leading-relaxed mb-6 font-montserrat">
+                  Redesigned E-Commerce mobile app to improvise teh interface
+                  for better user experiences.
+                </p>
+
+                <div class="flex gap-6 ">
+
+                  <div class="cursor-pointer">
+                    <a
+                      href="https://www.behance.net/gallery/125882175/UI-Redesign"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center justify-center gap-2 text-slate-200  flex-row  py-1  text-center rounded pointer">
+                      <!-- GitHub SVG Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                        height="32"
+                        viewBox="0 0 24 24"><!-- Icon from TDesign Icons by TDesign - https://github.com/Tencent/tdesign-icons/blob/main/LICENSE --><path
+                          fill="currentColor"
+                          d="M9.456 10.772q-.378.278-.964.278l-2.219.002V8.72h2.051q.286 0 .566.049q.272.048.482.174q.21.125.335.35q.125.223.126.571q0 .628-.377.907m-.224 4.447a3 3 0 0 1-.614.063H6.273v-2.736H8.66q.713 0 1.145.328t.433 1.096q0 .39-.133.642q-.132.25-.356.398a1.5 1.5 0 0 1-.517.21m7.115-4.336q.726 0 1.083.39q.355.392.496 1.145h-3.225q.014-.21.09-.474a1.45 1.45 0 0 1 .768-.9q.313-.16.788-.16" /><path
+                          fill="currentColor"
+                          d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1s11 4.925 11 11M10.07 7.141a6.2 6.2 0 0 0-1.299-.125h-4.69v9.97h4.831c.44 0 .88-.056 1.305-.168q.635-.167 1.131-.517q.496-.348.79-.9q.292-.552.292-1.306q0-.936-.454-1.599q-.453-.662-1.375-.928q.67-.321 1.012-.824t.342-1.256q0-.699-.23-1.173a1.9 1.9 0 0 0-.65-.762a2.8 2.8 0 0 0-1.005-.412m6.403 8.363q-.838 0-1.285-.433t-.487-1.393h5.208a5.1 5.1 0 0 0-.14-1.606a3.9 3.9 0 0 0-.636-1.368a3.2 3.2 0 0 0-1.123-.957q-.685-.356-1.606-.356q-.825 0-1.502.293t-1.166.802t-.754 1.208a4.2 4.2 0 0 0-.265 1.507q0 .837.258 1.536q.258.697.733 1.2t1.16.775t1.535.272q1.229 0 2.094-.559q.866-.557 1.285-1.856h-1.745q-.098.335-.53.635q-.434.3-1.034.3m1.918-7.982h-4.03v1.117h4.03z" /></svg>
+                      <span class="hover:text-teal-400">Case study</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- project6 -->
+
+            <div
+              class="flex flex-col lg:flex-row gap-8 w-full  p-12 lg:gap-12 
+               border border-slate-300/15 hover:shadow-md hover:shadow-slate-800 bg-slate-700/40 backdrop-blur-lg rounded-2xl">
+              <div class="lg:w-1/2">
+                <div class="overflow-hidden">
+                  <img
+                    src="/assets/images/welbite.png"
+                    alt="E-Commerce Platform"
+                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+              </div>
+              <div
+                class="lg:w-1/2 flex flex-col justify-center items-start space-y-4">
+                <h3
+                  class="text-xl md:text-2xl font-medium  text-teal-200 mb-4 font-montserrat">
+                  Food delivery app - WellBite
+                </h3>
+                <p class="text-gray-300 leading-relaxed mb-6 font-montserrat">
+                  Mockup project - UXUI Design of food delivery mobile
+                  application to improvise user experience.
+                </p>
+
+                <div class="flex gap-6">
+
+                  <div class>
+                    <a
+                      href="https://www.behance.net/gallery/186017879/UXUI-Case-study-Food-delivery-app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center gap-2 text-slate-200  flex-row  py-1 text-center rounded pointer">
+                      <!-- GitHub SVG Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                        height="32"
+                        viewBox="0 0 24 24"><!-- Icon from TDesign Icons by TDesign - https://github.com/Tencent/tdesign-icons/blob/main/LICENSE --><path
+                          fill="currentColor"
+                          d="M9.456 10.772q-.378.278-.964.278l-2.219.002V8.72h2.051q.286 0 .566.049q.272.048.482.174q.21.125.335.35q.125.223.126.571q0 .628-.377.907m-.224 4.447a3 3 0 0 1-.614.063H6.273v-2.736H8.66q.713 0 1.145.328t.433 1.096q0 .39-.133.642q-.132.25-.356.398a1.5 1.5 0 0 1-.517.21m7.115-4.336q.726 0 1.083.39q.355.392.496 1.145h-3.225q.014-.21.09-.474a1.45 1.45 0 0 1 .768-.9q.313-.16.788-.16" /><path
+                          fill="currentColor"
+                          d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1s11 4.925 11 11M10.07 7.141a6.2 6.2 0 0 0-1.299-.125h-4.69v9.97h4.831c.44 0 .88-.056 1.305-.168q.635-.167 1.131-.517q.496-.348.79-.9q.292-.552.292-1.306q0-.936-.454-1.599q-.453-.662-1.375-.928q.67-.321 1.012-.824t.342-1.256q0-.699-.23-1.173a1.9 1.9 0 0 0-.65-.762a2.8 2.8 0 0 0-1.005-.412m6.403 8.363q-.838 0-1.285-.433t-.487-1.393h5.208a5.1 5.1 0 0 0-.14-1.606a3.9 3.9 0 0 0-.636-1.368a3.2 3.2 0 0 0-1.123-.957q-.685-.356-1.606-.356q-.825 0-1.502.293t-1.166.802t-.754 1.208a4.2 4.2 0 0 0-.265 1.507q0 .837.258 1.536q.258.697.733 1.2t1.16.775t1.535.272q1.229 0 2.094-.559q.866-.557 1.285-1.856h-1.745q-.098.335-.53.635q-.434.3-1.034.3m1.918-7.982h-4.03v1.117h4.03z" /></svg>
+                      <span class="hover:text-teal-400">Case study</span>
+                    </a>
+                  </div>
+
+                </div>
 
               </div>
 
             </div>
 
           </div>
+        </section>
+      </div>
+
+      <!-- wrok experience -->
+      <section id="experience"
+        class="pt-10 px-6 pb-16 pl-12 pr-12 
+         md:pt-20  md:pb-32 
+         lg:pt-2 lg:pl-10 
+         bg-slate-950 sm:pb-32 mb:pb-16 sm:px-8 md:px-16 lg:px-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-10">
+          <h2
+            class="text-2xl md:text-3xl  font-medium text-white mb-12 font-montserrat text-center md:text-left">
+            Work Experience
+          </h2>
+
+          <div
+            class="flex flex-col items-center md:items-start md:flex-row md:flex-wrap gap-10 ">
+            <!-- Experience 1 -->
+            <div class="flex-1 min-w-[200px] ">
+              <p class="text-gray-300 text-2xl font-thin mb-1">Process
+                Executive</p>
+              <h3
+                class="text-gray-200 font-light text-sm mb-1 font-montserrat ">Adecco</h3>
+              <div class="w-12 h-px bg-slate-400 my-3"></div>
+              <p class="text-gray-200 text-primary text-sm font-extralight">2013
+                -
+                2014</p>
+            </div>
+
+            <div class="flex-1 min-w-[200px]">
+              <p
+                class="text-gray-300 text-2xl font-thin mb-1 font-montserrat">Senior
+                Quality
+                analyst</p>
+              <h3
+                class="text-gray-200 font-light text-sm mb-1 font-montserrat">Infosys</h3>
+              <div class="w-12 h-px bg-slate-400  my-3"></div>
+              <p
+                class="text-gray-200 text-primary text-sm font-extralight font-montserrat">2014
+                -
+                2017</p>
+            </div>
+
+            <div class="flex-1 min-w-[200px]">
+              <p
+                class="text-gray-300 text-2xl font-thin mb-1 font-montserrat">Personal
+                goal
+                pursuit</p>
+              <h3
+                class="text-gray-200 font-light text-sm mb-1 font-montserrat">Career
+                break</h3>
+              <div class="w-12 h-px bg-slate-400  my-3"></div>
+              <p
+                class="text-gray-200 text-primary text-sm font-extralight font-montserrat">2017
+                -
+                2021</p>
+            </div>
+
+            <div class="flex-1 min-w-[200px]">
+              <p
+                class="text-gray-300 text-2xl font-thin mb-1 font-montserrat">UXUI
+                Designer</p>
+              <h3
+                class="text-gray-200 font-light text-sm mb-1 font-montserrat ">Freelance</h3>
+              <div class="w-12 h-px bg-slate-400  my-3"></div>
+              <p
+                class="text-gray-200 text-primary text-sm font-extralight font-montserrat">2022
+                -
+                2024</p>
+            </div>
+
+            <div class="flex-1 min-w-[200px]">
+              <p
+                class="text-gray-300 text-2xl font-thin mb-1 font-montserrat">UXUI
+                Engineer</p>
+              <h3
+                class="text-gray-200 font-light text-sm mb-1 font-montserrat">CyberDude
+                Networks </h3>
+              <div class="w-12 h-px bg-slate-400  my-3"></div>
+              <p
+                class="text-gray-200 text-primary text-sm font-extralight font-montserrat">2022
+                -
+                2024</p>
+            </div>
+          </div>
 
         </div>
-
       </section>
 
-      <!-- skills section -->
+      <!-- skills small cards section -->
 
       <section class="w-full  bg-slate-800 h-auto py-10 flex justify-center ">
 
         <div class="max-w-7xl mx-auto px-6 lg:px-8  flex justify-center ">
 
-          <div class=" flex flex-wrap justify-center text-center 
-            gap-8 sm:gap-10 md:gap-14 lg:gap-20 
+          <div
+            class=" flex flex-wrap wrapper justify-center text-center space-x-6 font-montserrat 
+            gap-8 sm:gap-10 md:gap-14 lg:gap-0 
             items-center text-white">
             <!-- figma -->
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center ">
               <div
-                class=" flex   text-white border-1 h-24 w-24 border-teal-400 items-center justify-center rounded-sm hover:bg-cyan-600">
+                class=" flex  item item1 text-white border h-24 w-24 border-teal-400 items-center justify-center rounded-sm hover:bg-cyan-600">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                  class="max-w-none"
                   viewBox="0 0 24 24"><!-- Icon from Akar Icons by Arturo Wibawa - https://github.com/artcoholic/akar-icons/blob/master/LICENSE --><g
                     fill="none"><g clip-path="url(#SVGXv8lpc2Y)"><path
                         fill="currentColor" fill-rule="evenodd"
@@ -133,51 +713,51 @@
                           d="M0 0h24v24H0z" /></clippath></defs></g></svg>
 
               </div>
-              <span class="mt-2 text-sm">Figma</span>
+
             </div>
 
             <!-- invision -->
             <div class="flex flex-col items-center">
               <div
-                class=" flex  items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
+                class=" flex item item2 items-center text-white border  h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                   viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License --><path
                     fill="currentColor"
                     d="M4.001 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-16a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m1 2v14h14V5zm1.988 9.065l.77-3.271H6.565l.362-1.39h2.868l-1.132 4.67a3 3 0 0 0-.106.72c0 .298.141.386.362.437c.135.032 1.207.01 1.791-1.34l.744-3.097h-1.207l.362-1.39h2.58l-.332 1.578c.453-.88 1.359-1.715 2.25-1.715c.95 0 1.735.704 1.735 2.055c0 .345-.046.721-.166 1.145l-.483 1.805a2.2 2.2 0 0 0-.076.487c0 .314.121.47.347.47c.227 0 .514-.172.846-1.13l.664.267c-.393 1.429-1.102 2.025-1.993 2.025c-1.041 0-1.539-.643-1.539-1.523c0-.25.03-.518.106-.785l.498-1.853a2 2 0 0 0 .075-.565c0-.596-.347-.958-.905-.958c-.71 0-1.178.53-1.419 1.55l-.966 4.032h-1.69l.303-1.267c-.497.85-1.187 1.375-2.038 1.375c-1.026 0-1.509-.615-1.509-1.542c0-.235.03-.523.09-.79m1.637-5.44a1.125 1.125 0 1 1 0-2.25a1.125 1.125 0 0 1 0 2.25" /></svg>
               </div>
-              <span class="mt-2 text-sm">Invision</span>
+
             </div>
 
             <!-- tailwind css -->
             <div class="flex flex-col items-center">
               <div
-                class="flex  items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-teal-400">
+                class="flex  item item3 items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-teal-400">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                   viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE --><path
                     fill="currentColor"
                     d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12" /></svg>
               </div>
-              <span class="mt-2 text-sm">Tailwindcss</span>
+
             </div>
 
             <!-- Bootstrap -->
             <div class="flex flex-col items-center">
               <div
-                class="flex  items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
+                class="flex  item item4 items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                   viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License --><path
                     fill="currentColor"
                     d="M1 11v2s2 0 2 4v1a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-1c0-4 2-4 2-4v-2s-2 0-2-4V6a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v1c0 4-2 4-2 4m19.674 1q-.045.042-.088.086C19.578 13.093 19 14.692 19 17v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1c0-2.308-.578-3.907-1.586-4.914L3.326 12q.045-.042.088-.086C4.422 10.907 5 9.308 5 7V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v1c0 2.308.578 3.907 1.586 4.914zM8.5 7v10h5a3 3 0 0 0 1.615-5.529A3 3 0 0 0 12.5 7zm2 4V9h2a1 1 0 1 1 0 2zm0 2h3a1 1 0 1 1 0 2h-3z" /></svg>
               </div>
-              <span class="mt-2 text-sm">Bootstrap</span>
+
             </div>
 
             <!-- html -->
             <div class="flex flex-col items-center">
               <div
-                class="flex  items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
+                class="flex  item item-5 items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                   viewBox="0 0 24 24"><!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE --><g
                     fill="none" stroke="currentColor" stroke-linecap="round"
@@ -185,13 +765,13 @@
                       d="m20.754 4.792l-2.84 14.31a1.5 1.5 0 0 1-1.099 1.161l-4.069 1.045a3 3 0 0 1-1.492 0l-4.07-1.045a1.5 1.5 0 0 1-1.097-1.16L3.246 4.792A1.5 1.5 0 0 1 4.717 3h14.566a1.5 1.5 0 0 1 1.471 1.792" /><path
                       d="M17 6.881H7.732a.6.6 0 0 0-.589.718l.859 4.292h7.996l-.891 4.458a1 1 0 0 1-.64.744l-2.126.77a1 1 0 0 1-.681 0l-2.127-.77a1 1 0 0 1-.64-.744l-.224-1.119" /></g></svg>
               </div>
-              <span class="mt-2 text-sm">HTML</span>
+
             </div>
 
             <!-- CSS -->
-            <div class="flex flex-col items-center">
+            <div class="flex item flex-col items-center">
               <div
-                class="flex  items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
+                class="flex item-6 items-center text-white border h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                   viewBox="0 0 24 24"><!-- Icon from Huge Icons by Hugeicons - undefined --><path
                     fill="none" stroke="currentColor" stroke-linecap="round"
@@ -199,13 +779,13 @@
                     d="M20 13v-2.343c0-.818 0-1.226-.152-1.594c-.152-.367-.441-.657-1.02-1.235l-4.736-4.736c-.499-.499-.748-.748-1.058-.896a2 2 0 0 0-.197-.082C12.514 2 12.161 2 11.456 2c-3.245 0-4.868 0-5.967.886a4 4 0 0 0-.603.603C4 4.59 4 6.211 4 9.456V13m9-10.5V3c0 2.828 0 4.243.879 5.121C14.757 9 16.172 9 19 9h.5M14 16h-3a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-3m-3-4.78C6.945 16.03 6.122 16 5.005 16C3.285 16 3 16.406 3 18v2c0 1.594.285 2 2.005 2c1.117 0 1.94-.03 1.995-1.22M21 16h-3a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-3" /></svg>
 
               </div>
-              <span class="mt-2 text-sm">CSS</span>
+
             </div>
 
             <!-- Github -->
-            <div class="flex flex-col items-center">
+            <div class="flex item flex-col items-center">
               <div
-                class=" flex  items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
+                class=" flex  item-7 items-center text-white border-1 h-24 w-24 border-teal-400  justify-center rounded-sm hover:bg-cyan-600">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                   viewBox="0 0 24 24"><!-- Icon from Material Line Icons by Vjacheslav Trushkin - https://github.com/cyberalien/line-md/blob/master/license.txt --><g
                     fill="none" stroke="currentColor" stroke-linecap="round"
@@ -222,334 +802,35 @@
                         values="10;0" /></path></g></svg>
 
               </div>
-              <span class="mt-2 text-sm">GitHub</span>
+
             </div>
 
-          </div>
-
-        </div>
-      </section>
-
-      <!-- my projects -->
-
-      <section id="projects" class="py-20 bg-gray-50/50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8  ">
-          <h2
-            class="text-4xl md:text-4xl font-medium text-gray-900 mb-12 font-serif">
-            My Projects
-          </h2>
-
-          <div class="space-y-16">
-            <!-- Project 1 -->
-
-            <div
-              class="flex flex-col lg:flex-row gap-8 w-full lg:gap-12 bg-teal-100 p-12 rounded-xl">
-              <div class="lg:w-1/2">
-                <div class="overflow-hidden">
-                  <img
-                    src="/assets/images/mp3page.png"
-                    alt="E-Commerce Platform"
-                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-              </div>
-              <div class="lg:w-1/2 flex flex-col justify-center">
-                <h3
-                  class="text-xl md:text-2xl font-medium text-gray-900 mb-4 font-serif">
-                  Tamil MP3 Downloader - Landing page
-                </h3>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                  Built a responsive landing page for an MP3 Downloader app
-                  using HTML, CSS, and Bootstrap.
-                  Focused on responsiveness with mobile, tablet, and desktop
-                  layouts, clean navigation, readable fonts, and
-                  visually appealing color schemes.
-                </p>
-
-                <div class="gap-2 flex flex-col lg:flex-row">
-                  <a href="https://thamilmp3songs-downloader.netlify.app/"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 bg-slate-700 w-40 text-center p-2 rounded text-amber-50 cursor-pointer ">Netlify
-                  </a>
-                  <a
-                    href="https://github.com/sidhgeetha/tamil-mp3-downloader.git"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 border border-slate-400 w-40 text-center p-2 rounded text-slate-600 cursor-pointer ">GitHub
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Project 2 -->
-
-            <div
-              class="flex flex-col lg:flex-row gap-8 w-full lg:gap-12 bg-teal-100 p-12 rounded-xl">
-              <div class="lg:w-1/2">
-                <div class="overflow-hidden">
-                  <img
-                    src="/assets/images/courselanding.png"
-                    alt="E-Commerce Platform"
-                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-              </div>
-              <div class="lg:w-1/2 flex flex-col justify-center">
-                <h3
-                  class="text-xl md:text-2xl font-medium text-gray-900 mb-4 font-serif">
-                  HMTL CSS learning course
-                </h3>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                  A responsive, visually appealing landing page for Cyberdude
-                  Networks, built using just HTML and CSS.
-                </p>
-
-                <div class="gap-2 flex flex-col lg:flex-row">
-                  <a href="https://cyberdude-networks-landingpage.netlify.app/"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 bg-slate-700 w-40 text-center p-2 rounded text-amber-50 cursor-pointer ">Netlify
-                  </a>
-                  <a
-                    href="https://github.com/sidhgeetha/cyberdude-networks-landingpage.git"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 border border-slate-400 w-40 text-center p-2 rounded text-slate-600 cursor-pointer ">GitHub
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-
-            <div
-              class="flex flex-col lg:flex-row gap-8 w-full lg:gap-12 bg-teal-100 p-12 rounded-xl">
-              <div class="lg:w-1/2">
-                <div class="overflow-hidden">
-                  <img
-                    src="/assets/images/imdb.png"
-                    alt="E-Commerce Platform"
-                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-              </div>
-              <div class="lg:w-1/2 flex flex-col justify-center">
-                <h3
-                  class="text-xl md:text-2xl font-medium text-gray-900 mb-4 font-serif">
-                  imdb-clone
-                </h3>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                  Imdb page clone Front-end React.js single-page application
-                  built with Create React App, focused on JavaScript, CSS, and
-                  HTML.
-                </p>
-
-                <div class="gap-2 flex flex-col lg:flex-row">
-                  <a href="http://imdb-clonepage.netlify.app/fav"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 bg-slate-700 w-40 text-center p-2 rounded text-amber-50 cursor-pointer ">Netlify
-                  </a>
-                  <a href="https://github.com/sidhgeetha/imdbproject"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 border border-slate-400 w-40 text-center p-2 rounded text-slate-600 cursor-pointer ">GitHub
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- project4 -->
-
-            <div
-              class="flex flex-col lg:flex-row gap-8 w-full lg:gap-12 bg-teal-100 p-12 rounded-xl">
-              <div class="lg:w-1/2">
-                <div class="overflow-hidden">
-                  <img
-                    src="/assets/images/storybox.png"
-                    alt="E-Commerce Platform"
-                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-              </div>
-              <div class="lg:w-1/2 flex flex-col justify-center">
-                <h3
-                  class="text-xl md:text-2xl font-medium text-gray-900 mb-4 font-serif">
-                  StoryBox
-                </h3>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                  Front-end React.js single-page application (SPA) built with
-                  Create React App, focused on JavaScript, CSS, and HTML.
-                  A web platform for kids to create, illustrate, and publish
-                  their own stories. Users can add AI-assisted illustrations,
-                  share their stories,
-                  and even print or sell them online.
-                </p>
-
-                <div class="gap-2 flex flex-col lg:flex-row">
-                  <a
-                    href="https://storybox-page-27lntszge-geeths-projects-22074057.vercel.app/"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 bg-slate-700 w-40 text-center p-2 rounded text-amber-50 cursor-pointer ">Vercel
-                  </a>
-                  <a href="https://github.com/sidhgeetha/storybox-landing.git"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 border border-slate-400 w-40 text-center p-2 rounded text-slate-600 cursor-pointer ">GitHub
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- project 5 -->
-            <div
-              class="flex flex-col lg:flex-row gap-8 w-full lg:gap-12 bg-teal-100 p-12 rounded-xl">
-              <div class="lg:w-1/2">
-                <div class="overflow-hidden">
-                  <img
-                    src="/assets/images/redesign-vilfresh.png"
-                    alt="E-Commerce Platform"
-                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-              </div>
-              <div class="lg:w-1/2 flex flex-col justify-center">
-                <h3
-                  class="text-xl md:text-2xl font-medium text-gray-900 mb-4 font-serif">
-                  E-Commerce Platform - Vilfresh
-                </h3>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                  Redesigned E-Commerce mobile app to improvise teh interface
-                  for better user experiences.
-                </p>
-
-                <div class="gap-2 flex flex-col lg:flex-row">
-                  <a
-                    href="https://www.behance.net/gallery/125882175/UI-Redesign"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 bg-slate-700 w-40 text-center p-2 rounded text-amber-50 cursor-pointer ">Behance
-                  </a>
-                  <a
-                    href="https://www.behance.net/gallery/125882175/UI-Redesign"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 border border-slate-400 w-40 text-center p-2 rounded text-slate-600 cursor-pointer ">Case
-                    study
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- project6 -->
-
-            <div
-              class="flex flex-col lg:flex-row gap-8 w-full lg:gap-12 bg-teal-100 p-12 rounded-xl">
-              <div class="lg:w-1/2">
-                <div class="overflow-hidden">
-                  <img
-                    src="/assets/images/welbite.png"
-                    alt="E-Commerce Platform"
-                    class="w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-              </div>
-              <div class="lg:w-1/2 flex flex-col justify-center">
-                <h3
-                  class="text-xl md:text-2xl font-medium text-gray-900 mb-4 font-serif">
-                  Food delivery app - WellBite
-                </h3>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                  Mockup project - UXUI Design of food delivery mobile
-                  application to improvise user experience.
-                </p>
-
-                <div class="gap-2 flex flex-col lg:flex-row">
-                  <a
-                    href="https://www.behance.net/gallery/186017879/UXUI-Case-study-Food-delivery-app"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 bg-slate-700 w-40 text-center p-2 rounded text-amber-50 cursor-pointer ">Behance
-                  </a>
-                  <a
-                    href="https://www.behance.net/gallery/186017879/UXUI-Case-study-Food-delivery-app"
-                    class="font-medium text-fg-brand hover:underline hover:decoration-teal-400 border border-slate-400 w-40 text-center p-2 rounded text-slate-600 cursor-pointer ">Case
-                    study
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </section>
-      </div>
-
-      <!-- wrok experience -->
-      <section id="experience"
-        class="pt-10 pl-12 pr-12 md:pt-20 md:pl-24 md:pb-32 lg:pt-2 lg:pl-10 bg-teal-800">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-10">
-          <h2
-            class="text-2xl md:text-3xl font-medium text-white mb-12 font-serif">
-            Work Experience
-          </h2>
-
-          <div class="flex  sm:flex-col md:flex-row lg:flex-row gap-10">
-            <!-- Experience 1 -->
-            <div class="flex-1 min-w-[200px]">
-              <p class="text-gray-300 text-2xl font-thin mb-1">Process
-                Executive</p>
-              <h3 class="text-gray-200 font-light text-sm mb-1">Adecco</h3>
-              <div class="w-12 h-px bg-slate-400 my-3"></div>
-              <p class="text-gray-200 text-primary text-sm font-extralight">2013
-                -
-                2014</p>
-            </div>
-
-            <div class="flex-1 min-w-[200px]">
-              <p class="text-gray-300 text-2xl font-thin mb-1">Senior Quality
-                analyst</p>
-              <h3 class="text-gray-200 font-light text-sm mb-1">Infosys</h3>
-              <div class="w-12 h-px bg-slate-400  my-3"></div>
-              <p class="text-gray-200 text-primary text-sm font-extralight">2014
-                -
-                2017</p>
-            </div>
-
-            <div class="flex-1 min-w-[200px]">
-              <p class="text-gray-300 text-2xl font-thin mb-1">Personal goal
-                pursuit</p>
-              <h3 class="text-gray-200 font-light text-sm mb-1">Career
-                break</h3>
-              <div class="w-12 h-px bg-slate-400  my-3"></div>
-              <p class="text-gray-200 text-primary text-sm font-extralight">2017
-                -
-                2021</p>
-            </div>
-
-            <div class="flex-1 min-w-[200px]">
-              <p class="text-gray-300 text-2xl font-thin mb-1">UXUI Designer</p>
-              <h3 class="text-gray-200 font-light text-sm mb-1">Freelance</h3>
-              <div class="w-12 h-px bg-slate-400  my-3"></div>
-              <p class="text-gray-200 text-primary text-sm font-extralight">2022
-                -
-                2024</p>
-            </div>
-
-            <div class="flex-1 min-w-[200px]">
-              <p class="text-gray-300 text-2xl font-thin mb-1">UXUI Engineer</p>
-              <h3 class="text-gray-200 font-light text-sm mb-1">CyberDude
-                Networks </h3>
-              <div class="w-12 h-px bg-slate-400  my-3"></div>
-              <p class="text-gray-200 text-primary text-sm font-extralight">2022
-                -
-                2024</p>
-            </div>
           </div>
 
         </div>
       </section>
 
       <!-- Footer -->
-      <footer id="contact" class="py-16 h-full bg-slate-950 ">
+      <footer id="contact" class="py-16 h-full bg-black">
         <div class="max-w-7xl mx-auto  lg:px-8">
           <div
-            class="flex flex-col md:flex-row items-center justify-between gap-8">
+            class="flex flex-col md:flex-row items-center text-center justify-between gap-8 ">
             <div class="flex flex-col gap-2">
 
               <div
                 class="w-full   px-6 lg:px-0  flex justify-center lg:justify-start ">
                 <img src="/assets/images/Asset 1.png"
-                  class=" sm:w-20 sm:h-20 md:w-20 md:h-16 lg:w-20 lg:h-16" />
+                  class=" w-12 h-8 sm:w-16 sm:h-10 md:w-20 md:h-16 lg:w-32 lg:h-24" />
               </div>
               <h3
-                class="text-2xl font-medium text-gray-300 mb-2 font-serif">Geetha
+                class="text-2xl font-medium pt-12 text-gray-300 mb-2 font-montserrat">Geetha
                 Sidhambaram</h3>
 
             </div>
 
             <div class="flex items-center gap-6">
 
-              <p class=" text-gray-300 text-xl">Connect me</p>
+              <p class=" text-gray-300 text-xl font-montserrat">Connect me</p>
               <!-- LinkedIn -->
               <a href="https://linkedin.com" target="_blank"
                 rel="noopener noreferrer"
@@ -583,10 +864,11 @@
             </div>
           </div>
 
-          <div class="mt-12 pt-8 border-t border-gray-200 flex ">
+          <div
+            class="mt-12 pt-8 border-t border-gray-200/20 flex font-montserrat  ">
 
             <p class="text-teal-500 text-sm ">
-              © 2025 Geethasite. All rights reserved.
+              © 2025 Geetha Sidhambaram.
             </p>
           </div>
         </div>
